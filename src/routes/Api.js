@@ -27,6 +27,7 @@ router.get("/post", PostController.index);
 router.get("/post/:postId", PostController.read);
 router.post("/post", PostController.create);
 router.put("/post/:postId", PostController.update);
+router.put("/post/:postId/comment", PostController.addComment);
 router.delete("/post/:postId", PostController.deleteOne);
 
 // Comment Routes

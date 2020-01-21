@@ -18,15 +18,23 @@ const schema = new Schema(
       type: String,
       default: "https://source.unsplash.com/1600x900/?blog",
     },
+    _author: {
+      type: Schema.Types.ObjectId,
+      require: true,
+      ref: "User",
+    },
     meta: {
       views: {
         type: Number,
+        default: 0,
       },
       comments: {
         type: Number,
+        default: 0,
       },
       likes: {
         type: Number,
+        default: 0,
       },
     },
     comments: [

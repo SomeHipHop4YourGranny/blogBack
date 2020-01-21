@@ -1,4 +1,3 @@
-import httpErrorCreater from './errors'
-import io from './socket'
+import httpErrorCreater from "./errors";
 
-export { httpErrorCreater, io }
+export { httpErrorCreater };

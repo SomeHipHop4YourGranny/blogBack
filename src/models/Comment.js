@@ -4,11 +4,6 @@ const schema = new Schema(
   {
     text: {
       type: String,
-      require: true,
-      unique: true,
-    },
-    likes: {
-      type: Number,
     },
     _author: {
       type: Schema.Types.ObjectId,
